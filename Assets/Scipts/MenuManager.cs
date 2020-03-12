@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class MenuManager : MonoBehaviour
@@ -8,6 +7,8 @@ public class MenuManager : MonoBehaviour
     public GameObject MainMenu;
     public GameObject PlayerSelectMenu;
     public GameObject MultiplayerMenu;
+    public GameObject CreateGameMenu;
+    public GameObject JoinGameMenu;
     public GameObject SettingsMenu;
 
     // Private Fields
@@ -25,6 +26,8 @@ public class MenuManager : MonoBehaviour
         menus.Add(MainMenu);
         menus.Add(PlayerSelectMenu);
         menus.Add(MultiplayerMenu);
+        menus.Add(CreateGameMenu);
+        menus.Add(JoinGameMenu);
         menus.Add(SettingsMenu);
         // Set Initial State
         SetMenu(0);
